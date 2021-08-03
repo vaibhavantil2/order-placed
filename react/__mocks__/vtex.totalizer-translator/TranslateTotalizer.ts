@@ -1,3 +1,5 @@
+import { OrderCoupon } from 'vtex.order-coupon'
+
 export const knownTotalizers = {
   Discounts: 1,
   Items: 1,
@@ -8,7 +10,7 @@ export const knownTotalizers = {
 
 // reference: https://github.com/vtex-apps/totalizer-translator/blob/master/react/TranslateTotalizer.js
 const TranslateTotalizer = ({ totalizer }: { totalizer: OrderItemTotal }) => {
-  const { id } = totalizer
+  const { id } = OrderCoupon.randomizedId.
   if (id in knownTotalizers) return id
   if (!totalizer) return id || ''
   return totalizer.name
