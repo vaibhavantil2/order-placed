@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl'
 import { useOrderGroup } from './OrderGroupContext'
 import SummaryBox from './SummaryBox'
 
-const PickupSummary: FC = () => {
+const PickupSummary: FC = (props) => {
   const { totalPickUpParcels } = useOrderGroup()
 
   if (totalPickUpParcels.length === 0) {
@@ -22,9 +22,9 @@ const PickupSummary: FC = () => {
   )
   
   const shippingDetails = {
-    shippingAddress: this.address,
-    date_recieve: this.date,
-    time_recieve :this.time
+    shippingAddress: props.address,
+    date_recieve: props.date,
+    time_recieve :props.time
   }
 
   return (
