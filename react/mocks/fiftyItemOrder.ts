@@ -1839,7 +1839,7 @@ export const orderGroupQuery = {
               transactionId: '458D7F86C4434D0D906FD2AE07056CDF',
               payments: [
                 {
-                  id: '6F3F16B6482F474F9BA3EB97A46A2834',
+                  account_id: '6F3F16B6482F474F9BA3EB97A46A2834',
                   paymentSystem: '4',
                   paymentSystemName: 'Mastercard',
                   value: 5399,
