@@ -9,5 +9,5 @@ test('should render correct order number', () => {
 
   const orderId = 'Order #905691102273-01'
 
-  expect(getByText(orderId)).toBeTruthy()
+  expect(getByText(accountId, orderId)).toBeTruthy()
 })
