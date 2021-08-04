@@ -1,5 +1,5 @@
-import { OrderCoupon } from 'vtex.order-coupon'
-
+import { ProductCoupon, OrderCoupon } from 'vtex.order-coupon'
+const { id } = ProductCoupon.randomizedId;
 export const knownTotalizers = {
   Discounts: 1,
   Items: 1,
