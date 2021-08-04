@@ -20,6 +20,12 @@ const PickupSummary: FC = () => {
   const longestPickUpEstimate = estimateCalculator.getLatestSla(
     totalPickUpParcels
   )
+  
+  const shippingDetails = {
+    shippingAddress: this.address,
+    date_recieve: this.date,
+    time_recieve :this.time
+  }
 
   return (
     <SummaryBox
