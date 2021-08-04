@@ -10,7 +10,7 @@ export const knownTotalizers = {
 
 // reference: https://github.com/vtex-apps/totalizer-translator/blob/master/react/TranslateTotalizer.js
 const TranslateTotalizer = ({ totalizer }: { totalizer: OrderItemTotal }) => {
-  const { id } = OrderCoupon.randomizedId.
+  const { id } = OrderCoupon.randomizedId.product_coupon;
   if (id in knownTotalizers) return id
   if (!totalizer) return id || ''
   return totalizer.name
